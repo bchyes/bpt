@@ -811,7 +811,7 @@ int main() {
         } else if (s == "find") {
             std::cin >> s;
             try { tree.find(s); }
-            catch (...) { std::cout << "NULL" << std::endl; }
+            catch (...) { std::cout << "null" << std::endl; }
         } else if (s == "delete") {
             int x;
             std::cin >> s;
