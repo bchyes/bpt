@@ -279,9 +279,11 @@ namespace sjtu {
                 bool have_search = 0;
                 for (i = 0; i < now.length - 1; i++)
                     if (!cpy(now.value[i].first, key)) {
-                        have_ans = std::max(have_ans, find(now, key, i));
+                        bool now_ans = find(now, key, i);
+                        have_ans = std::max(have_ans, now_ans);
+                        if (!now_ans && have_search) break;
                         have_search = 1;
-                    } else if (have_search) break;
+                    }
                 if (i == now.length - 1) have_ans = std::max(have_ans, find(now, key, i));
             }
             return have_ans;
@@ -290,7 +292,10 @@ namespace sjtu {
         void find(const Key &key) {
             file.open(file_name);
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
-            if (!root.length) {file.close();throw int();}
+            if (!root.length) {
+                file.close();
+                throw int();
+            }
             Compare cpy;
             bool have_ans = 0;
             node now = root;
@@ -298,9 +303,11 @@ namespace sjtu {
             bool have_search = 0;
             for (i = 0; i < now.length - 1; i++)
                 if (!cpy(now.value[i].first, key)) {
-                    have_ans = std::max(have_ans, find(now, key, i));
+                    bool now_ans = find(now, key, i);
+                    have_ans = std::max(have_ans, now_ans);
+                    if (!now_ans && have_search) break;
                     have_search = 1;
-                } else if (have_search) break;
+                }
             if (i == now.length - 1) have_ans = std::max(have_ans, find(now, key, i));
             file.close();
             if (!have_ans)
@@ -311,7 +318,10 @@ namespace sjtu {
         void erase(const value_type &value) {
             file.open(file_name);
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
-            if (!root.length) {file.close();throw int();}
+            if (!root.length) {
+                file.close();
+                throw int();
+            }
             node now = root;
             while (!now.is_leave) {
                 int i;
@@ -335,9 +345,10 @@ namespace sjtu {
                         while (tmp.father != -1) {
                             file.seekg(tmp.father);
                             file.read(reinterpret_cast<char *>(&tmp), sizeof(node));
-                            for (int j = 0; j < tmp.length; j++) {
+                            for (int j = 0; j < tmp.length - 1; j++) {
                                 if (!Compare_all(v_up, tmp.value[j]) && !Compare_all(tmp.value[j], v_up)) {
                                     tmp.value[j] = now.value[0];
+                                    v_up=now.value[0];//!
                                     file.seekp(tmp.address);
                                     file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
                                     ok = 1;
@@ -796,12 +807,12 @@ namespace sjtu {
         }
     };
 }
-sjtu::bpt<sjtu::string, int> tree("file");
+sjtu::bpt<sjtu::string, int, 4> tree("file");
 
 int main() {
     int n;
     std::cin >> n;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= 106; i++) {
         sjtu::string s;
         std::cin >> s;
         if (s == "insert") {
@@ -812,7 +823,35 @@ int main() {
             catch (...) {}
         } else if (s == "find") {
             std::cin >> s;
-            try { tree.find(s); }
+            try {
+                tree.find(s);
+                std::cout << "+" << i << std::endl;
+            }
+            catch (...) { std::cout << "null" << std::endl; }
+        } else if (s == "delete") {
+            int x;
+            std::cin >> s;
+            std::cin >> x;
+            try { tree.erase(sjtu::pair<sjtu::string, int>(s, x)); }
+                //try { tree.erase(s); }
+            catch (...) {}
+        }
+    }
+    for (int i = 107; i <= n; i++) {
+        sjtu::string s;
+        std::cin >> s;
+        if (s == "insert") {
+            int x;
+            std::cin >> s;
+            std::cin >> x;
+            try { tree.insert(sjtu::pair<sjtu::string, int>(s, x)); }
+            catch (...) {}
+        } else if (s == "find") {
+            std::cin >> s;
+            try {
+                tree.find(s);
+                //std::cout << "+" << i << std::endl;
+            }
             catch (...) { std::cout << "null" << std::endl; }
         } else if (s == "delete") {
             int x;

@@ -110,11 +110,11 @@ namespace sjtu {
                         if (tmp.next != -1) {
                             file.seekg(tmp.next);
                             node tmp_0;
-                            file.read(reinterpret_cast<char *>(&tmp_0),sizeof(node));
-                            tmp_0.pre=new_tmp.address;
-                            new_tmp.next=tmp_0.address;
+                            file.read(reinterpret_cast<char *>(&tmp_0), sizeof(node));
+                            tmp_0.pre = new_tmp.address;
+                            new_tmp.next = tmp_0.address;
                             file.seekp(tmp_0.address);
-                            file.write(reinterpret_cast<char *>(&tmp_0),sizeof(node));
+                            file.write(reinterpret_cast<char *>(&tmp_0), sizeof(node));
                         }
                         tmp.next = new_tmp.address;
                         new_tmp.pre = tmp.address;
@@ -142,7 +142,7 @@ namespace sjtu {
                                         node_back.son[j + 1] = node_back.son[j];
                                     }
                                     node_back.value[i] = v_up;
-                                    node_back.son[i+1] = new_tmp.address;//!
+                                    node_back.son[i + 1] = new_tmp.address;//!
                                     break;
                                 }
                             }
@@ -194,7 +194,7 @@ namespace sjtu {
                                         node_back.son[j + 1] = node_back.son[j];//最后一个无效移动
                                     }
                                     node_back.value[i] = v_up;
-                                    node_back.son[i+1] = new_tmp.address;//!
+                                    node_back.son[i + 1] = new_tmp.address;//!
                                     break;
                                 }
                             }
@@ -281,7 +281,10 @@ namespace sjtu {
         void erase(const Key &key) {
             file.open(file_name);
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
-            if (!root.length) {file.close();throw int();}
+            if (!root.length) {
+                file.close();
+                throw int();
+            }
             node now = root;
             while (!now.is_leave) {
                 int i;
@@ -305,7 +308,7 @@ namespace sjtu {
                         while (tmp.father != -1) {
                             file.seekg(tmp.father);
                             file.read(reinterpret_cast<char *>(&tmp), sizeof(node));
-                            for (int j = 0; j < tmp.length; j++) {
+                            for (int j = 0; j < tmp.length - 1; j++) {
                                 if (!cpy(v_up.first, tmp.value[j].first) && !cpy(tmp.value[j].first, v_up.first)) {
                                     tmp.value[j] = now.value[0];
                                     file.seekp(tmp.address);
