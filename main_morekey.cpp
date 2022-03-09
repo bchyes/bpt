@@ -825,7 +825,7 @@ int main() {
             std::cin >> s;
             try {
                 tree.find(s);
-                std::cout << "+" << i << std::endl;
+                //std::cout << "+" << i << std::endl;
             }
             catch (...) { std::cout << "null" << std::endl; }
         } else if (s == "delete") {
