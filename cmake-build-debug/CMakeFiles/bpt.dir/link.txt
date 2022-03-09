@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/bpt.dir/main_morekey.cpp.o  -o bpt 

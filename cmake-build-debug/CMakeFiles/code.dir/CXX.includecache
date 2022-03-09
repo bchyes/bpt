@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/CLion/bpt/exceptions.hpp
+cstddef
+-
+cstring
+-
+string
+-
+
+/mnt/d/CLion/bpt/main_morekey.cpp
+iostream
+-
+functional
+-
+cstddef
+-
+fstream
+-
+cstring
+-
+utility.hpp
+/mnt/d/CLion/bpt/utility.hpp
+exceptions.hpp
+/mnt/d/CLion/bpt/exceptions.hpp
+string.hpp
+/mnt/d/CLion/bpt/string.hpp
+
+/mnt/d/CLion/bpt/string.hpp
+utility
+-
+
+/mnt/d/CLion/bpt/utility.hpp
+utility
+-
+

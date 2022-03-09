@@ -1,0 +1,299 @@
+20
+insert GlowersForAlgernon 1966
+insert CppPrimer 2012
+insert Bune 2021
+insert Bker 2022
+insert Dier 2023
+find GlowersForAlgernon
+find CppPrimer
+find Bune
+find Bker
+find Dier
+delete GlowersForAlgernon
+find GlowersForAlgernon
+delete CppPrimer
+find CppPrimer
+delete Bune
+find Bune
+delete Bker
+find Bker
+delete Dier
+find Dier
+
+104
+insert a 1
+insert b 2
+insert c 3
+insert d 4
+insert e 5
+insert f 6
+insert g 7
+insert h 8
+insert i 9
+insert j 10
+insert k 11
+insert l 12
+insert m 13
+insert n 14
+insert o 15
+insert p 16
+insert q 17
+insert r 18
+insert s 19
+insert t 20
+insert u 21
+insert v 22
+insert w 23
+insert x 24
+insert y 25
+insert z 26
+find a
+find b
+find c
+find d
+find e
+find f
+find g
+find h
+find i
+find j
+find k
+find l
+find m
+find n
+find o
+find p
+find q
+find r
+find s
+find t
+find u
+find v
+find w
+find x
+find y
+find z
+delete a
+find a
+delete b
+find b
+delete c
+find c
+delete d
+find d
+delete e
+find e
+delete f
+find f
+delete g
+find g
+delete h
+find h
+delete i
+find i
+delete j
+find j
+delete k
+find k
+delete l
+find l
+delete m
+find m
+delete n
+find n
+delete o
+find o
+delete p
+find p
+delete q
+find q
+delete r
+find r
+delete s
+find s
+delete t
+find t
+delete u
+find u
+delete v
+find v
+delete w
+find w
+delete x
+find x
+delete y
+find y
+delete z
+find z
+
+48
+insert a 1
+insert b 2
+insert c 3
+insert d 4
+insert e 5
+insert f 6
+insert g 7
+insert h 8
+insert i 9
+insert j 10
+insert k 11
+insert l 12
+find a
+find b
+find c
+find d
+find e
+find f
+find g
+find h
+find i
+find j
+find k
+find l
+delete a
+find a
+delete b
+find b
+delete c
+find c
+delete d
+find d
+delete e
+find e
+delete f
+find f
+delete g
+find g
+delete h
+find h
+delete i
+find i
+delete j
+find j
+delete k
+find k
+delete l
+find l
+
+20
+insert a 1
+insert b 2
+insert c 3
+insert d 4
+insert e 5
+insert f 6
+insert g 7
+insert h 8
+insert i 9
+insert j 10
+find a
+find b
+find c
+find d
+find e
+find f
+find g
+find h
+find i
+find j
+
+48
+insert a 1
+insert b 2
+insert c 3
+insert d 4
+insert e 5
+insert f 6
+insert g 7
+insert h 8
+insert i 9
+insert j 10
+insert k 11
+insert l 12
+find a
+find b
+find c
+find d
+find e
+find f
+find g
+find h
+find i
+find j
+find k
+find l
+delete l
+find l
+delete k
+find k
+delete j
+find j
+delete i
+find i
+delete h
+find h
+delete g
+find g
+delete f
+find f
+delete e
+find e
+delete d
+find d
+delete c
+find c
+delete b
+find b
+delete a
+find a
+
+48
+insert a 1
+insert b 2
+insert c 3
+insert d 4
+insert e 5
+insert f 6
+insert g 7
+insert h 8
+insert i 9
+insert j 10
+insert k 11
+insert l 12
+find a
+find b
+find c
+find d
+find e
+find f
+find g
+find h
+find i
+find j
+find k
+find l
+delete f
+find f
+delete k
+find k
+delete g
+find g
+delete a
+find a
+delete c
+find c
+delete j
+find j
+delete l
+find l
+delete e
+find e
+delete d
+find d
+delete h
+find h
+delete i
+find i
+delete b
+find b

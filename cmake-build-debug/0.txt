@@ -1,0 +1,229 @@
+42
+insert a 1
+insert b 2
+insert c 3
+insert d 4
+insert e 5
+insert f 6
+insert g 7
+insert h 8
+insert i 9
+insert j 10
+insert k 11
+insert l 12
+insert m 13
+insert n 14
+insert o 15
+insert p 16
+insert q 17
+insert r 18
+insert s 19
+insert t 20
+insert u 21
+insert v 22
+insert w 23
+insert x 24
+insert y 25
+insert z 26
+delete s
+find s
+delete t
+find t
+delete u
+find u
+delete v
+find v
+delete w
+find w
+delete x
+find x
+delete y
+find y
+delete z
+find z
+
+104
+insert z 26
+insert a 1
+insert b 2
+insert q 17
+insert d 4
+insert k 11
+insert e 5
+insert p 16
+insert y 25
+insert f 6
+insert c 3
+insert t 20
+insert m 13
+insert g 7
+insert u 21
+insert h 8
+insert x 24
+insert i 9
+insert w 23
+insert o 15
+insert j 10
+insert l 12
+insert n 14
+insert s 19
+insert r 18
+insert v 22
+find a
+find b
+find c
+find d
+find e
+find f
+find g
+find h
+find i
+find j
+find k
+find l
+find m
+find n
+find o
+find p
+find q
+find r
+find s
+find t
+find u
+find v
+find w
+find x
+find y
+find z
+delete l
+find l
+delete b
+find b
+delete j
+find j
+delete d
+find d
+delete e
+find e
+delete f
+find f
+delete p
+find p
+delete h
+find h
+delete v
+find v
+delete c
+find c
+delete k
+find k
+delete a
+find a
+delete y
+find y
+delete n
+find n
+delete z
+find z
+delete g
+find g
+delete q
+find q
+delete r
+find r
+delete s
+find s
+delete t
+find t
+delete w
+find w
+delete i
+find i
+delete u
+find u
+delete x
+find x
+delete m
+find m
+delete o
+find o
+
+78
+insert z 26
+find z
+insert a 1
+find a
+insert b 2
+find b
+insert q 17
+find q
+insert d 4
+find d
+insert k 11
+find k
+insert e 5
+find e
+insert p 16
+find p
+insert y 25
+find y
+insert f 6
+find f
+insert c 3
+find c
+insert t 20
+find t
+insert m 13
+find m
+insert g 7
+find g
+insert u 21
+find u
+insert h 8
+find h
+insert x 24
+find x
+insert i 9
+find i
+insert w 23
+find w
+insert o 15
+find o
+insert j 10
+find j
+insert l 12
+find l
+insert n 14
+find n
+insert s 19
+find s
+insert r 18
+find r
+insert v 22
+find v
+find a
+find b
+find c
+find d
+find e
+find f
+find g
+find h
+find i
+find j
+find k
+find l
+find m
+find n
+find o
+find p
+find q
+find r
+find s
+find t
+find u
+find v
+find w
+find x
+find y
+find z
