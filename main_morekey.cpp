@@ -61,6 +61,7 @@ namespace sjtu {
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
             if (!root.length) {
                 node tmp;
+                file.seekg(0, std::ios::end);
                 tmp.address = file.tellg();
                 root.son[0] = tmp.address;
                 tmp.father = 0;
@@ -70,8 +71,9 @@ namespace sjtu {
                 tmp.value[0] = value;
                 /*tmp.value[0].first = value.first;
                 tmp.value[0].second = value.second;*/
+                file.seekp(tmp.address);
                 file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
-                file.seekg(0);
+                file.seekp(0);
                 file.write(reinterpret_cast<char *>(&root), sizeof(node));
                 file.close();
                 return;
@@ -288,7 +290,7 @@ namespace sjtu {
         void find(const Key &key) {
             file.open(file_name);
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
-            if (!root.length) throw int();
+            if (!root.length) {file.close();throw int();}
             Compare cpy;
             bool have_ans = 0;
             node now = root;
@@ -309,7 +311,7 @@ namespace sjtu {
         void erase(const value_type &value) {
             file.open(file_name);
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
-            if (!root.length) throw int();
+            if (!root.length) {file.close();throw int();}
             node now = root;
             while (!now.is_leave) {
                 int i;
@@ -794,7 +796,7 @@ namespace sjtu {
         }
     };
 }
-sjtu::bpt<sjtu::string, int> tree("file");
+sjtu::bpt<sjtu::string, int, 4> tree("file");
 
 int main() {
     int n;

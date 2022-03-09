@@ -55,6 +55,7 @@ namespace sjtu {
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
             if (!root.length) {
                 node tmp;
+                file.seekg(0, std::ios::end);
                 tmp.address = file.tellg();
                 root.son[0] = tmp.address;
                 tmp.father = 0;
@@ -64,8 +65,9 @@ namespace sjtu {
                 tmp.value[0] = value;
                 /*tmp.value[0].first = value.first;
                 tmp.value[0].second = value.second;*/
+                file.seekp(tmp.address);
                 file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
-                file.seekg(0);
+                file.seekp(0);
                 file.write(reinterpret_cast<char *>(&root), sizeof(node));
                 file.close();
                 return;
@@ -279,7 +281,7 @@ namespace sjtu {
         void erase(const Key &key) {
             file.open(file_name);
             file.read(reinterpret_cast<char *>(&root), sizeof(node));
-            if (!root.length) throw int();
+            if (!root.length) {file.close();throw int();}
             node now = root;
             while (!now.is_leave) {
                 int i;
@@ -297,6 +299,24 @@ namespace sjtu {
                     now.length--;
                     file.seekp(now.address);
                     file.write(reinterpret_cast<char *>(&now), sizeof(node));
+                    if (!i) {
+                        node tmp = now;
+                        bool ok = 0;
+                        while (tmp.father != -1) {
+                            file.seekg(tmp.father);
+                            file.read(reinterpret_cast<char *>(&tmp), sizeof(node));
+                            for (int j = 0; j < tmp.length; j++) {
+                                if (!cpy(v_up.first, tmp.value[j].first) && !cpy(tmp.value[j].first, v_up.first)) {
+                                    tmp.value[j] = now.value[0];
+                                    file.seekp(tmp.address);
+                                    file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
+                                    ok = 1;
+                                    break;
+                                }
+                            }
+                            if (ok) break;
+                        }
+                    }
                     if (now.length <= (M - 2) / 2) {
                         node tmp;
                         if (now.pre != -1) {
