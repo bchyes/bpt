@@ -327,6 +327,24 @@ namespace sjtu {
                     now.length--;
                     file.seekp(now.address);
                     file.write(reinterpret_cast<char *>(&now), sizeof(node));
+                    if (!i) {
+                        node tmp = now;
+                        bool ok = 0;
+                        while (tmp.father != -1) {
+                            file.seekg(tmp.father);
+                            file.read(reinterpret_cast<char *>(&tmp), sizeof(node));
+                            for (int j = 0; j < tmp.length; j++) {
+                                if (!Compare_all(v_up, tmp.value[j]) && !Compare_all(tmp.value[j], v_up)) {
+                                    tmp.value[j] = now.value[0];
+                                    file.seekp(tmp.address);
+                                    file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
+                                    ok = 1;
+                                    break;
+                                }
+                            }
+                            if (ok) break;
+                        }
+                    }
                     if (now.length <= (M - 2) / 2) {
                         node tmp;
                         if (now.pre != -1) {
