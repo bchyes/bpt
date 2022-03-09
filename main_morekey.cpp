@@ -794,7 +794,7 @@ namespace sjtu {
         }
     };
 }
-sjtu::bpt<sjtu::string, int, 4> tree("file");
+sjtu::bpt<sjtu::string, int> tree("file");
 
 int main() {
     int n;
