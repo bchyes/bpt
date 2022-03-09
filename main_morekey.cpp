@@ -807,12 +807,12 @@ namespace sjtu {
         }
     };
 }
-sjtu::bpt<sjtu::string, int, 4> tree("file");
+sjtu::bpt<sjtu::string, int> tree("file");
 
 int main() {
     int n;
     std::cin >> n;
-    for (int i = 1; i <= 106; i++) {
+    for (int i = 1; i <= n; i++) {
         sjtu::string s;
         std::cin >> s;
         if (s == "insert") {
@@ -837,7 +837,7 @@ int main() {
             catch (...) {}
         }
     }
-    for (int i = 107; i <= n; i++) {
+    /*for (int i = 107; i <= n; i++) {
         sjtu::string s;
         std::cin >> s;
         if (s == "insert") {
@@ -861,5 +861,5 @@ int main() {
                 //try { tree.erase(s); }
             catch (...) {}
         }
-    }
+    }*/
 }
