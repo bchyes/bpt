@@ -450,7 +450,7 @@ namespace sjtu {
                                                 if (tmp_.length > (M) / 2) {
                                                     now.length++;
                                                     now.value[now.length - 2] = tmp.value[k];
-                                                    now.son[now.length - 1] = tmp_.son[k];
+                                                    now.son[now.length - 1] = tmp_.son[0];
                                                     file.seekg(now.son[now.length - 1]);
                                                     node tmp_0;
                                                     file.read(reinterpret_cast<char *>(&tmp_0), sizeof(tmp_0));
@@ -628,7 +628,7 @@ namespace sjtu {
                                         if (tmp_.length > (M) / 2) {
                                             now.length++;
                                             now.value[now.length - 2] = tmp.value[k];
-                                            now.son[now.length - 1] = tmp_.son[k];
+                                            now.son[now.length - 1] = tmp_.son[0];
                                             file.seekg(now.son[now.length - 1]);
                                             node tmp_0;
                                             file.read(reinterpret_cast<char *>(&tmp_0), sizeof(tmp_0));
