@@ -810,11 +810,36 @@ namespace sjtu {
 sjtu::bpt<sjtu::string, int, 4> tree("file");
 
 int main() {
-    freopen("data6_2fortest.in", "r", stdin);
-    freopen("data6_2test.out", "w", stdout);
+    //freopen("data6_2fortest.in", "r", stdin);
+    //freopen("data6_2test.out", "w", stdout);
     int n;
     std::cin >> n;
-    for (int i = 1; i <= 433; i++) {
+    for (int i = 1; i <= n; i++) {
+        sjtu::string s;
+        std::cin >> s;
+        if (s == "insert") {
+            int x;
+            std::cin >> s;
+            std::cin >> x;
+            try { tree.insert(sjtu::pair<sjtu::string, int>(s, x)); }
+            catch (...) {}
+        } else if (s == "find") {
+            std::cin >> s;
+            try {
+                tree.find(s);
+                /*std::cout << "+" << i << std::endl;*/
+            }
+            catch (...) { std::cout << "null" << std::endl; /*std::cout << "+" << i << std::endl;*/}
+        } else if (s == "delete") {
+            int x;
+            std::cin >> s;
+            std::cin >> x;
+            try { tree.erase(sjtu::pair<sjtu::string, int>(s, x)); }
+                //try { tree.erase(s); }
+            catch (...) {}
+        }
+    }
+    /*for (int i = 434; i <= n; i++) {
         sjtu::string s;
         std::cin >> s;
         if (s == "insert") {
@@ -829,7 +854,7 @@ int main() {
                 tree.find(s);
                 std::cout << "+" << i << std::endl;
             }
-            catch (...) { std::cout << "null" << std::endl; std::cout << "+" << i << std::endl;}
+            catch (...) { std::cout << "null" << std::endl; *//*std::cout << "+" << i << std::endl;*//*}
         } else if (s == "delete") {
             int x;
             std::cin >> s;
@@ -838,30 +863,5 @@ int main() {
                 //try { tree.erase(s); }
             catch (...) {}
         }
-    }
-    for (int i = 434; i <= n; i++) {
-        sjtu::string s;
-        std::cin >> s;
-        if (s == "insert") {
-            int x;
-            std::cin >> s;
-            std::cin >> x;
-            try { tree.insert(sjtu::pair<sjtu::string, int>(s, x)); }
-            catch (...) {}
-        } else if (s == "find") {
-            std::cin >> s;
-            try {
-                tree.find(s);
-                std::cout << "+" << i << std::endl;
-            }
-            catch (...) { std::cout << "null" << std::endl; std::cout << "+" << i << std::endl;}
-        } else if (s == "delete") {
-            int x;
-            std::cin >> s;
-            std::cin >> x;
-            try { tree.erase(sjtu::pair<sjtu::string, int>(s, x)); }
-                //try { tree.erase(s); }
-            catch (...) {}
-        }
-    }
+    }*/
 }
