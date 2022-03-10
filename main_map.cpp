@@ -8,7 +8,7 @@
 #include "string.hpp"
 
 namespace sjtu {
-    template<class Key, class T, int M = 16, class Compare= std::less<Key> >
+    template<class Key, class T, int M = 40, class Compare= std::less<Key> >
     class bpt {
     public:
         typedef pair<Key, T> value_type;
@@ -770,7 +770,7 @@ namespace sjtu {
         }
     };
 }
-sjtu::bpt<sjtu::string, int, 4> tree("file");
+sjtu::bpt<sjtu::string, int> tree("file");
 
 int main() {
     int n;
