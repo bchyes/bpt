@@ -1,0 +1,541 @@
+520
+find 10
+delete 10 3
+find 6
+delete 2 12
+insert 2 7
+insert 7 16
+delete 6 14
+find 3
+delete 5 8
+insert 7 15
+delete 3 4
+find 6
+find 7
+find 7
+find 3
+insert 5 16
+find 6
+delete 8 14
+find 1
+delete 1 13
+find 7
+find 1
+find 6
+find 7
+insert 10 11
+find 7
+delete 4 15
+insert 6 10
+delete 1 19
+find 4
+delete 4 11
+find 5
+find 2
+insert 9 20
+insert 1 5
+delete 10 14
+find 10
+delete 1 18
+delete 6 8
+find 5
+insert 4 4
+delete 8 12
+find 8
+delete 5 20
+find 2
+delete 3 9
+delete 9 14
+find 3
+insert 10 15
+find 9
+find 6
+delete 1 11
+insert 5 6
+insert 2 9
+insert 1 10
+insert 2 3
+delete 1 7
+insert 2 15
+find 3
+find 7
+delete 3 5
+find 3
+find 1
+insert 3 13
+delete 10 18
+insert 8 16
+insert 7 19
+delete 1 13
+insert 7 19
+find 4
+insert 3 2
+find 6
+delete 10 8
+delete 2 8
+insert 6 20
+find 5
+insert 5 2
+insert 9 20
+insert 3 13
+find 10
+insert 6 10
+delete 4 2
+find 9
+delete 4 18
+delete 4 1
+insert 8 16
+find 1
+insert 5 6
+find 1
+delete 4 16
+delete 6 14
+insert 7 11
+delete 2 15
+find 1
+insert 10 4
+delete 6 19
+delete 1 17
+delete 6 7
+insert 10 4
+find 3
+insert 5 8
+insert 1 13
+insert 9 4
+find 2
+insert 3 3
+insert 4 18
+delete 9 17
+delete 10 13
+find 7
+delete 1 9
+find 2
+delete 3 6
+delete 3 18
+find 2
+find 7
+find 10
+insert 6 14
+find 10
+find 1
+insert 9 18
+insert 3 1
+find 4
+find 6
+find 2
+find 2
+insert 7 5
+find 10
+find 3
+insert 1 4
+insert 6 9
+delete 5 11
+insert 7 10
+delete 7 4
+find 4
+insert 4 1
+find 5
+find 10
+delete 4 4
+delete 6 3
+insert 2 3
+delete 5 18
+find 7
+insert 6 2
+find 7
+find 9
+find 6
+find 1
+delete 5 19
+delete 3 18
+delete 8 13
+delete 3 15
+delete 6 9
+find 1
+find 3
+insert 2 9
+delete 4 7
+insert 5 9
+insert 9 20
+insert 3 10
+insert 7 7
+find 7
+insert 9 11
+find 10
+insert 5 17
+insert 10 20
+insert 4 20
+insert 9 6
+find 3
+find 3
+delete 8 14
+insert 7 17
+find 5
+delete 2 15
+find 5
+find 1
+find 5
+insert 5 16
+find 3
+insert 7 13
+find 5
+insert 4 1
+delete 7 18
+insert 4 16
+insert 9 20
+insert 3 14
+find 9
+find 1
+delete 10 20
+find 5
+delete 1 16
+insert 4 17
+insert 1 20
+delete 2 18
+insert 7 11
+delete 8 2
+find 9
+delete 10 2
+insert 5 14
+delete 4 13
+find 8
+find 6
+insert 7 11
+insert 4 3
+find 5
+delete 10 5
+insert 3 8
+delete 6 14
+find 1
+insert 1 18
+find 7
+insert 10 1
+find 9
+insert 7 4
+delete 8 6
+delete 10 8
+delete 6 8
+delete 6 10
+find 7
+insert 5 7
+find 7
+find 4
+find 5
+insert 2 6
+delete 3 19
+insert 6 19
+delete 1 11
+find 9
+find 3
+find 2
+insert 9 4
+insert 3 8
+delete 1 17
+delete 6 19
+delete 5 3
+delete 5 15
+delete 3 10
+find 1
+find 2
+delete 2 1
+insert 9 5
+insert 7 20
+find 1
+delete 9 3
+find 10
+delete 6 18
+insert 8 20
+insert 2 1
+find 3
+insert 5 16
+find 2
+insert 4 11
+delete 10 3
+insert 9 9
+delete 10 19
+delete 6 11
+find 1
+find 5
+find 7
+insert 1 20
+delete 5 11
+delete 3 12
+find 2
+insert 6 19
+find 8
+insert 8 18
+insert 7 16
+insert 2 18
+find 5
+find 3
+find 4
+insert 7 15
+delete 1 5
+delete 3 9
+insert 4 6
+insert 5 4
+insert 3 11
+insert 8 9
+delete 6 13
+find 5
+insert 1 7
+find 6
+delete 8 12
+delete 9 16
+delete 3 4
+insert 9 1
+find 5
+insert 1 17
+find 2
+insert 6 8
+insert 8 13
+delete 6 15
+delete 7 12
+find 5
+insert 1 5
+insert 6 17
+insert 1 17
+find 10
+insert 9 12
+insert 5 15
+find 10
+find 1
+find 7
+delete 6 1
+delete 3 13
+insert 9 7
+insert 3 5
+insert 1 11
+delete 10 5
+delete 2 15
+delete 3 19
+find 10
+delete 10 1
+find 8
+insert 7 8
+delete 1 12
+insert 9 19
+insert 3 15
+delete 3 5
+find 2
+find 1
+find 5
+find 6
+insert 1 18
+insert 2 18
+find 9
+delete 4 19
+find 6
+delete 2 4
+insert 4 18
+insert 6 1
+insert 4 4
+insert 4 7
+insert 7 5
+find 10
+delete 8 1
+find 6
+delete 2 1
+delete 3 7
+delete 6 2
+insert 1 20
+insert 6 12
+find 10
+insert 4 15
+insert 2 14
+find 4
+insert 1 4
+delete 1 1
+find 4
+insert 5 18
+insert 6 13
+insert 8 14
+delete 6 19
+delete 6 10
+insert 10 5
+insert 1 10
+delete 6 4
+insert 1 18
+insert 1 4
+insert 6 10
+delete 6 7
+insert 8 14
+insert 3 1
+insert 9 7
+find 10
+find 9
+insert 10 18
+insert 7 13
+insert 8 10
+delete 10 5
+insert 5 15
+find 1
+delete 2 10
+find 6
+insert 9 18
+find 7
+find 4
+delete 2 9
+find 6
+find 7
+insert 1 16
+find 6
+find 7
+delete 3 7
+find 6
+find 7
+insert 3 3
+find 6
+find 7
+delete 9 9
+find 6
+find 7
+delete 5 1
+find 6
+find 7
+find 8
+insert 8 6
+find 6
+find 7
+delete 2 16
+find 6
+find 7
+delete 7 13
+find 6
+find 7
+delete 10 18
+find 6
+find 7
+find 8
+insert 6 5
+find 6
+find 7
+delete 8 12
+find 6
+find 7
+insert 2 6
+find 6
+find 7
+delete 1 14
+find 6
+find 7
+delete 5 6
+find 6
+find 7
+find 4
+insert 5 11
+find 6
+find 7
+delete 8 7
+find 6
+find 7
+insert 4 11
+find 6
+find 7
+delete 6 8
+find 6
+find 7
+find 5
+delete 9 20
+find 6
+find 7
+find 7
+delete 10 10
+delete 3 10
+find 3
+delete 9 20
+delete 10 16
+find 10
+delete 9 20
+find 1
+insert 6 8
+delete 10 10
+delete 9 16
+insert 1 16
+delete 9 20
+delete 10 2
+delete 10 13
+delete 1 20
+insert 1 5
+find 10
+insert 6 3
+insert 5 7
+insert 6 1
+insert 2 14
+find 9
+insert 10 10
+delete 1 11
+delete 1 16
+find 1
+insert 3 3
+delete 10 15
+insert 5 17
+find 9
+insert 7 17
+delete 8 8
+insert 1 18
+find 3
+find 10
+find 9
+find 5
+delete 1 6
+insert 5 20
+insert 4 14
+find 8
+insert 1 8
+insert 9 16
+find 6
+find 2
+find 2
+find 1
+delete 2 5
+find 7
+find 4
+delete 7 16
+delete 8 17
+insert 2 12
+find 3
+insert 4 11
+insert 10 13
+delete 4 6
+insert 6 18
+delete 5 11
+find 5
+delete 6 19
+find 4
+insert 7 11
+insert 4 4
+insert 10 19
+find 4
+delete 9 5
+insert 8 18
+insert 8 15
+delete 7 2
+insert 5 6
+find 10
+find 9
+insert 10 6
+delete 3 11
+find 6
+find 1
+insert 6 19
+delete 10 11
+insert 7 17
+delete 4 12
+delete 5 17
+delete 2 9
+insert 8 18
+find 9
+find 8
+delete 7 1
+insert 7 11
+find 4
+delete 4 3
+insert 9 2
+insert 8 15
+insert 8 1
+find 3
+insert 8 17
+delete 5 7
+find 1
+delete 8 8

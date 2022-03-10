@@ -665,7 +665,7 @@ namespace sjtu {
                                         if (tmp_.length > (M) / 2) {
                                             now.length++;
                                             now.value[now.length - 2] = tmp.value[k];
-                                            now.son[now.length - 1] = tmp_.son[k];
+                                            now.son[now.length - 1] = tmp_.son[0];//!
                                             file.seekg(now.son[now.length - 1]);
                                             node tmp_0;
                                             file.read(reinterpret_cast<char *>(&tmp_0), sizeof(tmp_0));
@@ -807,14 +807,14 @@ namespace sjtu {
         }
     };
 }
-sjtu::bpt<sjtu::string, int> tree("file");
+sjtu::bpt<sjtu::string, int, 4> tree("file");
 
 int main() {
-    //freopen("data5_2.in", "r", stdin);
-    //freopen("data5_2.out", "w", stdout);
+    freopen("data6_2fortest.in", "r", stdin);
+    freopen("data6_2test.out", "w", stdout);
     int n;
     std::cin >> n;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= 433; i++) {
         sjtu::string s;
         std::cin >> s;
         if (s == "insert") {
@@ -827,9 +827,9 @@ int main() {
             std::cin >> s;
             try {
                 tree.find(s);
-                //std::cout << "+" << i << std::endl;
+                std::cout << "+" << i << std::endl;
             }
-            catch (...) { std::cout << "null" << std::endl; }
+            catch (...) { std::cout << "null" << std::endl; std::cout << "+" << i << std::endl;}
         } else if (s == "delete") {
             int x;
             std::cin >> s;
@@ -839,7 +839,7 @@ int main() {
             catch (...) {}
         }
     }
-    /*for (int i = 107; i <= n; i++) {
+    for (int i = 434; i <= n; i++) {
         sjtu::string s;
         std::cin >> s;
         if (s == "insert") {
@@ -852,9 +852,9 @@ int main() {
             std::cin >> s;
             try {
                 tree.find(s);
-                //std::cout << "+" << i << std::endl;
+                std::cout << "+" << i << std::endl;
             }
-            catch (...) { std::cout << "null" << std::endl; }
+            catch (...) { std::cout << "null" << std::endl; std::cout << "+" << i << std::endl;}
         } else if (s == "delete") {
             int x;
             std::cin >> s;
@@ -863,5 +863,5 @@ int main() {
                 //try { tree.erase(s); }
             catch (...) {}
         }
-    }*/
+    }
 }
