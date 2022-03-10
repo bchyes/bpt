@@ -311,6 +311,7 @@ namespace sjtu {
                             for (int j = 0; j < tmp.length - 1; j++) {
                                 if (!cpy(v_up.first, tmp.value[j].first) && !cpy(tmp.value[j].first, v_up.first)) {
                                     tmp.value[j] = now.value[0];
+                                    v_up=now.value[0];//!
                                     file.seekp(tmp.address);
                                     file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
                                     ok = 1;

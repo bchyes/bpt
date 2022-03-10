@@ -348,7 +348,7 @@ namespace sjtu {
                             for (int j = 0; j < tmp.length - 1; j++) {
                                 if (!Compare_all(v_up, tmp.value[j]) && !Compare_all(tmp.value[j], v_up)) {
                                     tmp.value[j] = now.value[0];
-                                    v_up=now.value[0];//!
+                                    v_up = now.value[0];//!
                                     file.seekp(tmp.address);
                                     file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
                                     ok = 1;
@@ -810,6 +810,8 @@ namespace sjtu {
 sjtu::bpt<sjtu::string, int> tree("file");
 
 int main() {
+    //freopen("data4.in", "r", stdin);
+    //freopen("data4.out", "w", stdout);
     int n;
     std::cin >> n;
     for (int i = 1; i <= n; i++) {
