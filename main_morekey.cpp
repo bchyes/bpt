@@ -46,9 +46,9 @@ namespace sjtu {
                 file.open(file_name, std::fstream::out);
                 file.close();
                 file.open(file_name);
+                node tmp;
+                file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
             }
-            node tmp;
-            file.write(reinterpret_cast<char *>(&tmp), sizeof(node));
             file.close();
         }
 
@@ -810,8 +810,8 @@ namespace sjtu {
 sjtu::bpt<sjtu::string, int> tree("file");
 
 int main() {
-    //freopen("data4.in", "r", stdin);
-    //freopen("data4.out", "w", stdout);
+    //freopen("data5_2.in", "r", stdin);
+    //freopen("data5_2.out", "w", stdout);
     int n;
     std::cin >> n;
     for (int i = 1; i <= n; i++) {

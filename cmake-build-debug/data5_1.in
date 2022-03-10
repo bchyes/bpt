@@ -1,0 +1,51 @@
+50
+insert 4 2
+find 7
+insert 1 2
+insert 6 1
+insert 5 3
+find 9
+insert 6 1
+delete 7 1
+insert 3 2
+delete 2 1
+find 7
+find 6
+delete 6 2
+find 10
+insert 2 3
+insert 5 3
+find 6
+insert 2 3
+find 4
+find 1
+delete 8 3
+insert 3 2
+insert 3 1
+insert 10 3
+find 1
+find 7
+delete 10 3
+delete 4 3
+insert 9 1
+find 3
+delete 9 1
+find 2
+delete 3 2
+find 10
+insert 5 1
+insert 4 1
+delete 4 2
+insert 5 2
+insert 6 2
+delete 9 1
+insert 4 3
+delete 5 1
+insert 6 1
+find 2
+find 5
+find 2
+delete 8 1
+insert 7 2
+find 2
+insert 10 3
