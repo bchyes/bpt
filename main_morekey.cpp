@@ -807,7 +807,7 @@ namespace sjtu {
         }
     };
 }
-sjtu::bpt<sjtu::string, int, 4> tree("file");
+sjtu::bpt<sjtu::string, int, 16> tree("file");
 
 int main() {
     //freopen("data6_2fortest.in", "r", stdin);
