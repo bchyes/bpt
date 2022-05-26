@@ -14,7 +14,7 @@ namespace sjtu {
     template<class Key, class T, int M = 30, class Compare= std::less<Key> >
     class bpt {
     private:
-        typedef pair <Key, T> value_type;
+        typedef pair<Key, T> value_type;
         struct node {
             bool is_leave = 0;
             int length = 0;
@@ -34,7 +34,7 @@ namespace sjtu {
         sjtu::vector<long long> delete_;
         int delete_num = 0;
 
-        void split(node &tmp, node &now) {
+        void split(node tmp, node now) {
             value_type v_up;
             tmp.length = M >> 1;
             if (!delete_num) {
@@ -209,7 +209,7 @@ namespace sjtu {
             }
         }
 
-        void insert_leave(const value_type &value, node &tmp, node &now) {
+        void insert_leave(const value_type &value, node tmp, node now) {
             int i;
             for (i = 0; i < tmp.length; i++) {//添加节点
                 if (!cpy(value.first, tmp.value[i].first) && !cpy(tmp.value[i].first, value.first)) {
@@ -233,7 +233,7 @@ namespace sjtu {
             }
         }
 
-        void merge(node &now, value_type &v_up) {
+        void merge(node now, value_type v_up) {
             node tmp;
             if (now.pre != -1) {//如果合并的节点左边有节点的话
                 file.seekg(now.pre);
@@ -917,34 +917,6 @@ namespace sjtu {
                 }
             file.close();
             return key;
-        }
-
-        Key upper_bound(const Key &key) {
-            file.open(file_name);
-            file.read(reinterpret_cast<char *>(&root), sizeof(node));
-            node now = root;
-            while (!now.is_leave) {
-                int i;
-                for (i = 0; i < now.length - 1; i++)
-                    if (cpy(key, now.value[i].first))
-                        break;
-                file.seekg(now.son[i]);
-                file.read(reinterpret_cast<char *>(&now), sizeof(node));
-            }
-            for (int i = 0; i < now.length; i++)
-                if (cpy(key, now.value[i].first)) {
-                    file.close();
-                    return now.value[i].first;
-                }
-            if (now.next == -1) {
-                file.close();
-                return key;
-            } else {
-                file.seekg(now.next);
-                file.read(reinterpret_cast<char *>(&now), sizeof(node));
-                file.close();
-                return now.value[0].first;
-            }
         }
     };
 }
