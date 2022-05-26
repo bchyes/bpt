@@ -85,13 +85,16 @@
 		<Unit filename="/mnt/d/CLion/bpt/exceptions.hpp">
 			<Option target="code"/>
 		</Unit>
-		<Unit filename="/mnt/d/CLion/bpt/main_morekey.cpp">
-			<Option target="code"/>
-		</Unit>
 		<Unit filename="/mnt/d/CLion/bpt/string.hpp">
 			<Option target="code"/>
 		</Unit>
+		<Unit filename="/mnt/d/CLion/bpt/test.cpp">
+			<Option target="code"/>
+		</Unit>
 		<Unit filename="/mnt/d/CLion/bpt/utility.hpp">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="/mnt/d/CLion/bpt/vector.hpp">
 			<Option target="code"/>
 		</Unit>
 		<Unit filename="/mnt/d/CLion/bpt/CMakeLists.txt">

@@ -8,7 +8,7 @@
 #include "string.hpp"
 
 namespace sjtu {
-    template<class Key, class T, int M = 40, class Compare= std::less<Key>, class Compare_T=std::less<T>>
+    template<class Key, class T, int M = 30, class Compare= std::less<Key>, class Compare_T=std::less<T>>
     class bpt {
     public:
         typedef pair<Key, T> value_type;

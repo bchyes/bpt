@@ -123,32 +123,32 @@ code/fast:
 	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/build
 .PHONY : code/fast
 
-main_morekey.o: main_morekey.cpp.o
+test.o: test.cpp.o
 
-.PHONY : main_morekey.o
+.PHONY : test.o
 
 # target to build an object file
-main_morekey.cpp.o:
-	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/main_morekey.cpp.o
-.PHONY : main_morekey.cpp.o
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/test.cpp.o
+.PHONY : test.cpp.o
 
-main_morekey.i: main_morekey.cpp.i
+test.i: test.cpp.i
 
-.PHONY : main_morekey.i
+.PHONY : test.i
 
 # target to preprocess a source file
-main_morekey.cpp.i:
-	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/main_morekey.cpp.i
-.PHONY : main_morekey.cpp.i
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-main_morekey.s: main_morekey.cpp.s
+test.s: test.cpp.s
 
-.PHONY : main_morekey.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-main_morekey.cpp.s:
-	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/main_morekey.cpp.s
-.PHONY : main_morekey.cpp.s
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... code"
-	@echo "... main_morekey.o"
-	@echo "... main_morekey.i"
-	@echo "... main_morekey.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

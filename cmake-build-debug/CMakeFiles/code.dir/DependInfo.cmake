@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/d/CLion/bpt/main_morekey.cpp" "/mnt/d/CLion/bpt/cmake-build-debug/CMakeFiles/code.dir/main_morekey.cpp.o"
+  "/mnt/d/CLion/bpt/test.cpp" "/mnt/d/CLion/bpt/cmake-build-debug/CMakeFiles/code.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

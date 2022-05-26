@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/code.dir/main_morekey.cpp.o  -o code 
+/usr/bin/c++  -g   CMakeFiles/code.dir/test.cpp.o  -o code 

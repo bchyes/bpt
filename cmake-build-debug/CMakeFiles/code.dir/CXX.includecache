@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/d/CLion/bpt/exceptions.hpp
-cstddef
--
-cstring
--
-string
--
-
-/mnt/d/CLion/bpt/main_morekey.cpp
+/mnt/d/CLion/bpt/bpt.h
 iostream
 -
 functional
@@ -25,18 +17,42 @@ fstream
 -
 cstring
 -
+vector.hpp
+/mnt/d/CLion/bpt/vector.hpp
 utility.hpp
 /mnt/d/CLion/bpt/utility.hpp
 exceptions.hpp
 /mnt/d/CLion/bpt/exceptions.hpp
-string.hpp
-/mnt/d/CLion/bpt/string.hpp
+
+/mnt/d/CLion/bpt/exceptions.hpp
+cstddef
+-
+cstring
+-
+string
+-
 
 /mnt/d/CLion/bpt/string.hpp
 utility
 -
 
+/mnt/d/CLion/bpt/test.cpp
+bits/stdc++.h
+-
+bpt.h
+/mnt/d/CLion/bpt/bpt.h
+string.hpp
+/mnt/d/CLion/bpt/string.hpp
+
 /mnt/d/CLion/bpt/utility.hpp
 utility
+-
+
+/mnt/d/CLion/bpt/vector.hpp
+exceptions.hpp
+/mnt/d/CLion/bpt/exceptions.hpp
+climits
+-
+cstddef
 -
 

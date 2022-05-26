@@ -18,6 +18,13 @@ namespace sjtu {
             return len;
         }
 
+        string(const std::string &other) {
+            for (int i = 0; i < other.length(); i++)
+                alpha[i] = other[i];
+            alpha[other.length()] = '\0';
+            len = other.length();
+        }
+
         string(const string &other) {
             for (int i = 0; i < other.length(); i++)
                 alpha[i] = other.alpha[i];
